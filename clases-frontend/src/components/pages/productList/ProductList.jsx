@@ -1,4 +1,4 @@
-import Counter from "../../common/counter/Counter.jsx"
+
 
 const ProductList = ({nombre, edad}) => {
   
