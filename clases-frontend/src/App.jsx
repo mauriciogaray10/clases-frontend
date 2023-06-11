@@ -4,9 +4,9 @@ import Navbar from './components/layout/navBar/Navbar.jsx';
 function App() {
 
   return (
-    <>
+    <div>
       <Navbar />
-    </>
+    </div>
   )
 }
 
