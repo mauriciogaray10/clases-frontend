@@ -14,7 +14,7 @@ const ProductsListContainer = () => {
     }, [counter])
   
     return (
-   <ProductsListContainer counter = />
+   <ProductsListContainer counter = {counter} setCounter = {setCounter} />
   )
 }
 

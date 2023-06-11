@@ -4,7 +4,7 @@ import ProductsListContainer from './components/pages/productList/ProductsListCo
 
 
 const  App = () => {
-  let nombre = 'pepe';
+ 
 
    
   return (
