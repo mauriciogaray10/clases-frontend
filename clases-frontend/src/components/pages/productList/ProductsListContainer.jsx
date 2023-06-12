@@ -1,16 +1,20 @@
 import ProductsListPresentacional from "./ProductsListPresentacional.jsx"
 import { useState, useEffect } from "react"
+import productsMock from "../../productsMock.js"
 
 const ProductsListContainer = () => {
+    const [counter, setCounter] = useState(0)
+    useEffect( () =>
+      {  const tarea = new Promise ( (resolve, reject) =>{
+        resolve('La tarea se resolvió')
+    })
+    console.log(tarea);
 
-    const [counter, setCounter] = useState(0);
-    useEffect(() =>{
-        console.log('Llamado a la API');
-    }, [counter])
+    tarea.then( (res)=>{console.log(res);}).catch((err)=>{})}, []);
+
  
-    return (
-    <ProductsListPresentacional counter = {counter} setCounter={setCounter} />
-  )
+    return <ProductsListPresentacional counter = {counter} setCounter = {setCounter} />
+  
 }
 
 export default ProductsListContainer;
