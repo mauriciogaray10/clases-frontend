@@ -1,6 +1,6 @@
 import ProductsListPresentacional from "./ProductsListPresentacional.jsx"
 import { useState, useEffect } from "react"
-import productsMock from "../../productsMock.js"
+
 
 const ProductsListContainer = () => {
     const [counter, setCounter] = useState(0)

@@ -1,17 +1,18 @@
 import './App.css';
+import FetchingDeDatos from './components/fetchingDeDatos/FetchingDeDatos.jsx';
 import Navbar from './components/layout/navBar/Navbar.jsx'
 import ProductsListContainer from './components/pages/productList/ProductsListContainer.jsx';
 
 
 const  App = () => {
-  let nombre = 'pepe';
 
    
   return (
     <div>
-     <Navbar/>
+     {/* <Navbar/>
       <ProductsListContainer />
-      
+       */}
+       <FetchingDeDatos/>
     </div>
   );
 }
