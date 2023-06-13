@@ -1,19 +1,37 @@
 import './App.css';
-import Counter from './components/common/counter/Counter.jsx';
-import Navbar from './components/layout/navBar/Navbar.jsx';
-import ProductList from './components/pages/productList/ProductList.jsx';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import ProductsListContainer from './components/pages/productList/ProductsListContainer';
+import ItemDetailContainer from './components/pages/itemDetail/ItemDetailContainer';
+import CartContainer from './components/pages/cart/CartContainer';
+import Layout from './components/layout/Layout';
 
 const  App = () => {
-  let nombre = 'pepe';
+  
 
    
   return (
-    <div>
-      <Navbar />
-      <ProductList nombre={nombre} edad = {22}  />
-      <Counter />
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route element = {<Layout/>}>
+        <Route path='/' element={<ProductsListContainer/>} />
+        <Route path='/itemDetail' element={<ItemDetailContainer/>} />
+        <Route path='/cart' element={<CartContainer/>} />
+        </Route>
+        
+        <Route path='*' element={<h1>Page not found 404</h1>} />
+
+
+
+
+
+
+      </Routes>
+    </BrowserRouter>
+    
+    
+    
+    </>
   );
 }
 
