@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
     <div>
@@ -10,7 +10,7 @@ const Navbar = () => {
         <li>Urbanas</li>
         <li>Deportivas</li>
       </ul>
-      <h3>Icono de carrito</h3>
+      <Link to='/cart'>Ir al carrito</Link>
   
     </div>
 
