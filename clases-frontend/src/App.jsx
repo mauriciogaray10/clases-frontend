@@ -4,15 +4,16 @@ import Navbar from './components/layout/navBar/Navbar.jsx';
 import ProductList from './components/pages/productList/ProductList.jsx';
 
 
+
 const  App = () => {
   let nombre = 'pepe';
 
    
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <ProductList nombre={nombre} edad = {22}  />
-      <Counter />
+      <Counter /> */}
     </div>
   );
 }
